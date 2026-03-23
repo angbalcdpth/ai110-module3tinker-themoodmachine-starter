@@ -50,6 +50,19 @@ SAMPLE_POSTS = [
     "This is fine",
     "So excited for the weekend",
     "I am not happy about this",
+    "Lowkenuinely proud of myself today!",
+    "Currently experiencing a quarter-life crisis :(",
+    "I absolutely love getting stuck in traffic for an hour",
+    "Got the job offer but now I have to move away from home 🥲",
+    "That movie was so bad it was actually funny 😂",
+    "My parlay hit and I still feel empty inside",
+    "It's raining again.",
+    "Great, another group project where nobody replies 💀",
+    "I'm all good",
+    "I hate getting stuck in traffic",
+    "No cap, this went better than I expected :)",
+    "Got an A on the test but I'm burned out",
+    "Love that my laptop crashed right before submission",
 ]
 
 # Human labels for each post above.
@@ -65,6 +78,19 @@ TRUE_LABELS = [
     "neutral",   # "This is fine"
     "positive",  # "So excited for the weekend"
     "negative",  # "I am not happy about this"
+    "positive",  # "Lowkenuinely proud of myself today!"
+    "negative",  # "Currently experiencing a quarter-life crisis :("
+    "negative",  # "I absolutely love getting stuck in traffic for an hour"
+    "mixed",     # "Got the job offer but now I have to move away from home 🥲"
+    "mixed",     # "That movie was so bad it was actually kind of funny 😂"
+    "mixed",     # "My parlay hit and I still feel empty inside"
+    "neutral",   # "It's raining again."
+    "negative",  # "Great, another group project where nobody replies 💀"
+    "positive",  # "I'm all good"
+    "negative",  # "I hate getting stuck in traffic"
+    "positive",  # "No cap, this went better than I expected :)"
+    "mixed",     # "Got an A on the test but I'm burned out"
+    "negative",  # "Love that my laptop crashed right before submission"
 ]
 
 # TODO: Add 5-10 more posts and labels.

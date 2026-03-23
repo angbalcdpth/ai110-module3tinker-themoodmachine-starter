@@ -65,3 +65,10 @@ During this lab you will:
 - When debugging, print tokens, scores, or intermediate choices.
 - Ask an AI assistant to help create edge case posts or unusual wording.
 - Try examples that mislead or confuse your model. Failure cases teach you the most.
+
+---
+
+
+## Summary
+
+The core concept student should understand is how language can be ambiguous, and turning it into numbers requires real decisions like what counts as positive, how negation changes meaning, and where the boundary between "mixed" and "neutral" sits. Students may struggle with `score_text`, specifically with negation because the order of tokens matters and a simple word-lookup approach breaks down. Labeling the dataset could also prove to be difficult, posts with sarcasm or mixed emotions will show students "correct" labels aren't so obvious, and that those choices shape how the model behaves. The ML comparison will probably surprise people because a 1.00 accuracy sounds impressive until they realize the model trained and tested on the same data, so it's essentially memorizing rather than learning. AI was helpful for explaining errors and suggesting test cases, but it also introduced a real bug by adding sentiment words like `bad` to the negation trigger set, a good example of why AI output needs to be read critically, not just copied. I would guide a student by asking them to print the tokens and running score for that one sentence, then ask which token they think is causing the wrong result in order to get them to reason through their own code.
