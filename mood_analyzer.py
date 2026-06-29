@@ -33,9 +33,8 @@ class MoodAnalyzer:
         self.positive_words = set(w.lower() for w in positive_words)
         self.negative_words = set(w.lower() for w in negative_words)
 
-    # ---------------------------------------------------------------------
+
     # Preprocessing
-    # ---------------------------------------------------------------------
 
     def preprocess(self, text: str) -> List[str]:
         """
@@ -74,9 +73,8 @@ class MoodAnalyzer:
         tokens = [tok for tok in cleaned.split() if tok]
         return tokens
 
-    # ---------------------------------------------------------------------
+
     # Scoring logic
-    # ---------------------------------------------------------------------
 
     def score_text(self, text: str) -> int:
         """
@@ -124,9 +122,8 @@ class MoodAnalyzer:
 
         return score
 
-    # ---------------------------------------------------------------------
+
     # Label prediction
-    # ---------------------------------------------------------------------
 
     def predict_label(self, text: str) -> str:
         """
@@ -152,9 +149,6 @@ class MoodAnalyzer:
           return "negative"
         return "neutral"
 
-    # ---------------------------------------------------------------------
-    # Explanations (optional but recommended)
-    # ---------------------------------------------------------------------
 
     def explain(self, text: str) -> str:
         """
